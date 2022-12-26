@@ -15,9 +15,6 @@ export class ColumnEntity {
   id: number;
 
   @Column()
-  is_deleted: boolean;
-
-  @Column()
   example_data: string;
 
   @ManyToOne(() => UserEntity, (user) => user.columns)
